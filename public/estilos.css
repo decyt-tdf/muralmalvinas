@@ -1,0 +1,50 @@
+body {
+	overflow-y: hidden;
+	background-color: black;
+	background-image: url("./img/malvinas.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin:0;
+	padding:0
+}
+
+.tumb {
+	float: left;
+	display: block;
+	cursor: pointer;
+	width: 48px;
+	height: 44px;
+	opacity: 0.3;
+}
+
+.tumb:hover {
+	opacity: 100;
+}
+#close {
+	visibility: hidden;
+	cursor: pointer;
+    background: white;
+    border-radius: 14px;
+    right: 11%;
+    top: 5%;
+    z-index: 5;
+    position: absolute;
+    width: 31px;
+    height: 30px;
+    color: #FF5722;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#screen {
+	visibility: hidden;
+    left: 12%;
+    top: 5%;
+    width: 73%;
+    height: 79%;
+    background: rgba(0, 0, 0, 0.27);
+    border: 26px solid rgba(41, 10, 10, 0.59);
+    z-index: 4;
+    position: absolute;
+}

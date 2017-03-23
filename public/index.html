@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mural Malvinas</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<div id="close">x</div>
+<div id="screen"> </div>
+<script>
+var arrayImg = new Array();
+arrayImg[0] = "1.jpg";
+arrayImg[1] = "2.jpg";
+arrayImg[2] = "3.jpg";
+arrayImg[3] = "4.jpg";
+arrayImg[4] = "5.jpg";
+arrayImg[5] = "6.jpg";
+arrayImg[6] = "7.jpg";
+
+
+
+for (i = 0; i < 510; i++) { 
+getRandomImage(arrayImg, "");
+}
+
+document.getElementById("close").onclick = function () {
+  	document.getElementById("screen").style.visibility = "hidden";
+  	document.getElementById("close").style.visibility = "hidden";
+}
+
+function showImage(img) {
+	var elem = document.createElement("img");
+	elem.src = './img/'+img;
+	elem.setAttribute("height", "100%");
+    elem.setAttribute("width", "100%");
+    var vacio = document.getElementById('screen');
+    if (vacio !== null || vacio.innerHTML !== '' ) {
+    	document.getElementById("close").style.visibility = "visible";
+    	document.getElementById("screen").style.visibility = "visible";
+    	document.getElementById("screen").innerHTML = '';
+    	document.getElementById("screen").appendChild(elem);
+    }
+}
+
+function getRandomImage(imgAr, path) {
+    path = './img/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img class="tumb" onclick=javascript:showImage("'+img+'") src="' + path + img + '"  alt = "">';
+    document.write(imgStr); document.close();
+}
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-FROM node/alpine
+FROM node:alpine
 ADD . /mural-malvinas/
 WORKDIR /mural-malvinas/
 RUN apk update && apk add graphicsmagick

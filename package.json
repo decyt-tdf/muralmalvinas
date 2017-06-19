@@ -1,5 +1,5 @@
 {
-  "name": "mural-malvinas",
+  "name": "muralmalvinas",
   "version": "1.0.0",
   "description": "Mural Malvinas",
   "main": "index.js",
@@ -10,20 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
-    "del": "^2.2.2",
     "delete": "^0.3.2",
-    "ecstatic": "^2.1.0",
     "express": "^4.15.2",
-    "express-fileupload": "^0.1.2",
-    "express-route-fs": "^0.1.0",
     "formidable": "^1.1.1",
+    "fs-extra": "^3.0.1",
     "gm": "^1.23.0",
     "http": "0.0.0",
-    "method-override": "^2.3.8",
     "mongodb": "^2.2.25",
-    "quickthumb": "0.0.12",
-    "recursive-readdir": "^2.1.1",
-    "resize-image": "0.0.4",
     "superagent": "^3.5.2"
   }
 }

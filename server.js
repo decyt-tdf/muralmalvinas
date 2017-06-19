@@ -5,11 +5,10 @@ app = express(),
 formidable = require('formidable'),
 util = require('util'),
 fsx   = require('fs-extra'), 
-assert = require('assert'),
 bodyParser = require('body-parser');
 md5 = require('md5'),
 delx = require('delete'),
-fs = require('fs'),
+//fs = require('fs'),
 gm = require('gm');
  
 

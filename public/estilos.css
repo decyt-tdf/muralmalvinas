@@ -1,11 +1,44 @@
 body {
+    margin: 0 auto; text-align: center;
 	overflow-y: hidden;
 	background-color: black;
-	background-image: url("./img/malvinas.jpg");
+	background-image: url("./malvinas.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
-	margin:0;
 	padding:0
+}
+
+#usuarios a {
+    color: white;
+    border: 3px solid #0d610d;
+    float: left;
+    background:#247527;
+    padding:10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.datosuser {
+    color:white;
+    background: #002131;
+    text-decoration: none;
+    font-size: 24px;
+    padding:10px;
+
+}
+
+.usuario {
+    color: white;
+    padding: 10px;
+    visibility: visible;
+    left: 22%;
+    top: 5%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.27);
+    border: 8px solid rgba(41, 10, 10, 0.59);
+    z-index: 4;
+    position: absolute;
 }
 
 .tumb {
@@ -20,31 +53,72 @@ body {
 .tumb:hover {
 	opacity: 100;
 }
-#close {
-	visibility: hidden;
-	cursor: pointer;
-    background: white;
+.close {
+    right: 0;
+    cursor: pointer;
+    background: #1d0c07;
     border-radius: 14px;
-    right: 11%;
-    top: 5%;
-    z-index: 5;
+    /* margin: 5px; */
     position: absolute;
-    width: 31px;
+    /* right: 23%; */
+    /* left: 39%; */
+    width: 32px;
     height: 30px;
-    color: #FF5722;
+    color: #ffffff;
     font-size: 25px;
     font-family: sans-serif;
     text-align: center;
 }
 
-#screen {
-	visibility: hidden;
-    left: 12%;
-    top: 5%;
-    width: 73%;
-    height: 79%;
+.screen {
+
+}
+
+#ventana {
+     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin: auto;
+    visibility: hidden;
+    max-width: 50%;
     background: rgba(0, 0, 0, 0.27);
     border: 26px solid rgba(41, 10, 10, 0.59);
     z-index: 4;
-    position: absolute;
+}
+#ventana img {
+    width: 100%;
+    max-height: 600px;
+}
+.addimg {
+    cursor: pointer;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(60, 107, 0);
+    font-size: 23px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.delimg {
+    cursor: pointer;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(154, 14, 3);
+    font-size: 23px;
+    padding: 10px;
+    text-align: center;
+}
+
+.datos {
+    padding: 10px;
+    text-align: center;
+    background-color: #0a2f42;
+    font-size: 25px;
+    color: white;
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Panel</title>
+	      <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="login">
+	<div class="login-screen">
+		<div class="login-form">
+			<div class="control-group">
+			<div class="app-title">
+				<h1>Cargar Imagen en Mural</h1>
+			</div>
+				<div class="control-group">
+			 <form action="/upload"  enctype="multipart/form-data" method="post">
+			  
+			  	<input id="user" type="hidden" class="login-field" value="" placeholder="User" name="user" >
+			  	<input type="text" class="login-field" value="" placeholder="Nombre/s" name="nombre" required><br><br>
+				<input type="text" class="login-field" value="" placeholder="Curso" name="curso" required><br><br>
+				<input  type="file" accept="image/jpeg" name="upload" multiple="multiple" required><br><br>
+			  	<input class="btn btn-primary btn-large btn-block" value="SUBIR" type="submit">
+		  	</form><br>
+		  		<input class="btn btn-primary btn-large btn-block" onclick="location.href='/';" value="IR AL MURAL" type="submit">
+				</div>
+
+
+		 </div>
+  	</div>
+	</div>	
+	</div>
+</body>
+<script>
+document.getElementById("user").value = sessionStorage.getItem('user')
+</script>
+<script src="./js/md5.min.js"></script>
+ <script src="./js/token.js"></script>
+</html>

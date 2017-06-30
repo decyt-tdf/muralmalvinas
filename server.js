@@ -1,4 +1,3 @@
-
 var express = require("express"),
 http = require('http'),
 app = express(),
@@ -48,10 +47,12 @@ function admin(tokenx,callback) {
 
 
 function thumbnail(img) {
-var urlgm = '/home/public'
+var urlgm = __dirname+'/public'
+console.log(urlgm)
 gm(urlgm+'/img/'+img)
 .resize(100, 100)
 .write(urlgm+'/imgthumb/'+img, function (err) {
+	console.log(err)
 });
 }
 
@@ -190,7 +191,7 @@ form.on('end', function(fields, files) {
 //			db = database
   var randompass = Math.random().toString(36).slice(-6);
 	var collection = db.collection('users');
-	var array = [{name: nombre, lastname: apellido, user: nombre+"_"+apellido, pass: randompass, school: colegio, cue: cuex, mail: correo, active:"false"}]
+	var array = [{name: nombre, lastname: apellido, user: correo, pass: randompass, school: colegio, cue: cuex, mail: correo, active:"false"}]
   	insert(collection,array)
 
 	})
@@ -294,6 +295,7 @@ if (name === 'user') {
 });
 
 
+
 form.on('end', function(fields, files) {
 	
     var temp_path = this.openedFiles[0].path;
@@ -303,8 +305,8 @@ form.on('end', function(fields, files) {
     var new_location = './public/img/';
     
     fileType = file_name.split('.').pop().toLowerCase()
-    if(fileType === 'jpg'){    
-    var file = md5(file_name.toLowerCase())+".jpg"
+    if(fileType === 'jpg' || fileType === 'jpeg' ){    
+    var file = md5(file_name.toLowerCase())+"."+fileType
     fsx.copy(temp_path, new_location + file, function(err) {  
         if (err) {
             console.error(err);

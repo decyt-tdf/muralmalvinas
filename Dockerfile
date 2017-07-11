@@ -4,4 +4,4 @@ ADD ./package.json /muralmalvinas/
 WORKDIR /muralmalvinas/
 RUN npm install
 ADD . /muralmalvinas/
-CMD ["node","server.js"]
+CMD ["npm","run", "start"]

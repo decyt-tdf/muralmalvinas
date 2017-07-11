@@ -19,11 +19,11 @@ var ObjectId = require('mongodb').ObjectID;
 var mongouser= process.env.USER
 var mongopass= process.env.PASS
 
-var url = 'mongodb://'+mongouser+':'+mongopass+'@muraldb:27017/admin';
+var url = 'mongodb://muraldb:27017/admin';
 var db;
 
 MongoClient.connect(url, function (err, database) {
-if(err) throw err;
+if(err) console.log(err);
 
 db = database;
 })

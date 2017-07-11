@@ -1,6 +1,4 @@
-
-
-[
+module.exports = [
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 24  VALLE DE ANDORRA', cue: 940019400 },
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 8 CAMINITO DE COLORES', cue: 940000500 },
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 14 CARAMELOS SURTIDOS', cue: 940000600 },
@@ -11,8 +9,6 @@
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 20 LUCERITO DE FUEGO', cue: 940017300 },
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 19 TELKIEN', cue: 940017200 },
 {ciudad: 'Ushuaia', nivel: 'Inicial', nombre: 'JARDIN N° 18 CARUCHAS', cue: 940012200 },
-
-
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA MUNICIPAL EXPERIMENTAL LA BAHÍA',cue:940001300},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA MUNICIPAL EXPERIMENTAL LOS ALAKALUFES',cue:940011600},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL EXPERIMENTAL LAS GAVIOTAS',cue:940014600},
@@ -31,14 +27,12 @@
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL N° 24 JUAN RUIZ GALAN',cue:940007500},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL N° 22 BAHIA GOLONDRINA',cue:940009400},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL N° 31  JUANA MANSO',cue:940003600},
-{ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL N° 41 MARIO BENEDETTI'	cue:940017600},
+{ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA PROVINCIAL N° 41 MARIO BENEDETTI',	cue:940017600},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'COLEGIO DEL SUR PRIMARIO',cue:940003800},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'COLEGIO DON BOSCO NIVEL PRIMARIO',cue:940003700},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA MODELO DE EDUCACION INTEGRAL ANEXO USHUAIA',cue:940013701},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'ESCUELA JULIO VERNE',cue:940013500},
 {ciudad: 'Ushuaia', nivel: 'Primaria', nombre: 'COLEGIO NACIONAL PRIMARIO',cue:940006300},
-
-
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'COLEGIO PROVINCIAL LOS ANDES', cue:940006100},
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'COLEGIO PROVINCIAL ERNESTO SABATO', cue:940015900},
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'COLEGIO PROVINCIAL DR. JOSE MARIA SOBRAL', cue:940008500},
@@ -54,21 +48,16 @@
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'ESCUELA MODELO DE EDUCACION INTEGRAL ANEXO USHUAIA', cue:940013701},
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'ESCUELA DE ENSEÑANZA GRAL BASICA JULIO VERNE', cue:940013500},
 {ciudad: 'Ushuaia', nivel: 'Secundario', nombre: 'COLEGIO NACIONAL DE USHUAIA', cue:940006300},
-
-
 {ciudad: 'Ushuaia', nivel: 'Especial', nombre:'ESCUELA PROVINCIAL Nº 1 - KAYU CHENEN',cue:940006400},
 {ciudad: 'Ushuaia', nivel: 'Especial', nombre:'CAAD',cue:940014200},
 {ciudad: 'Ushuaia', nivel: 'Especial', nombre:'EDEI ESCUELA DE EDUCACION INTEGRAL USHUAIA',cue:940017800},
-
-
-
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES N° 1 - LA CALESITA ENCANTADA', cue:940000100},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDNI DE INFANTES Nº 3 MUNDO DE COLORES', cue:940006000},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 4 ARCO IRIS', cue:940005900},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 5 TOL -  OLEJCE', cue:940008200},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES N° 6 CRECER JUGANDO', cue:940000200},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES N° 9 TUTU MARAMBA', cue:940008100},
-{ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 11 - CHEPA'CHEN', cue:940005800},
+{ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 11 - CHEPA CHEN', cue:940005800},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFATNES Nº 12 - PAYASOS, GLOBOS Y CHUPETINES', cue:940005700},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 16  RAÍCES Y ALAS', cue:940009900},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES Nº 17 - OLAS DE FANTASÍA', cue:940010000},
@@ -80,8 +69,6 @@
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'INSTITUTO MARÍA AUXILIADORA ', cue:940005100},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES PASITOS CURIOSOS', cue:940010300},
 {ciudad: 'Rio Grande', nivel:'Inicial', nombre:'JARDIN DE INFANTES ROSARITO VERA', cue:940019900},
-
-
 {ciudad: 'Rio Grande', nivel:'Primario', nombre:'ESCUELA PROVINCIAL N° 2 DOCTOR BENJAMIN ZORRILLA', cue:940004200},
 {ciudad: 'Rio Grande', nivel:'Primario', nombre:'ESCUELA PROVINCIAL N° 4 REMOLCADOR A.R.A. GUARANI', cue:940004300},
 {ciudad: 'Rio Grande', nivel:'Primario', nombre:'ESCUELA PROVINCIAL  N° 7 EL ABRAZO DE MAIPU', cue:940004800},
@@ -116,7 +103,7 @@
 {ciudad: 'Rio Grande', nivel:'Rural', nombre:'ESCUELA PROVINCIAL N° 11 PIONEROS FUEGUINOS', cue:940005500},
 {ciudad: 'Rio Grande', nivel:'Rural', nombre:'ESCUELA PROVINCIAL Nº 17  COMISARIO RAMÓN LUCIO CORTÉS ', cue:940005600},
 {ciudad: 'Rio Grande', nivel:'Rural', nombre:'ESCUELA PROVINCIAL N° 18 DR. BENJAMIN MATIENZO', cue:940013000},
-{ciudad: 'Rio Grande', nivel:'Rural', nombre:'ESCUELA PROVINCIAL N° 37 PATRICIO O' BRYNE', cue:940010900},
+{ciudad: 'Rio Grande', nivel:'Rural', nombre:'ESCUELA PROVINCIAL N° 37 PATRICIO O  BRYNE', cue:940010900},
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'CENTRO POLIVALENTE DE ARTE PROF DIANA COTORRUELO', cue:940011400},
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'INSTITUTO SALESIANO DON BOSCO', cue:940010400},
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'COLEGIO INTEGRAL DE EDUCACION RIO GRANDE', cue:940003000},
@@ -136,11 +123,10 @@
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'INSTITUTO PRIVADO REPUBLICA ARGENTINA', cue:940005300},
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'JUVENIL INSTITUTO FUEGUINO', cue:940009600},
 {ciudad: 'Rio Grande', nivel:'Secundario', nombre:'ESCUELA AGROTECNICA SALESIANA NUESTRA SEÑORA DE LA CANDELARIA', cue:940009000},
-
 {ciudad: 'Tolhuin', nivel:'INICIAL	JARDÍN DE INFANTES N° 23 TOL KLÉVELE', cue:940018800},
 {ciudad: 'Tolhuin', nivel:'JARDIN DE INFANTES N° 13 ZHIOSHI',  cue:940013900},
 {ciudad: 'Tolhuin', nivel:'PRIMARIO	ESCUELA PROVINCIAL  N° 5 JOSE MARIA BEAUVOIR', cue:940008000},
 {ciudad: 'Tolhuin', nivel:'ESCUELA PROVINCIAL N° 45 CONGRESO DE TUCUMÁN	SIN INFO', cue:200000000},
 {ciudad: 'Tolhuin', nivel:'SECUNDARIO	COLEGIO PROVINCIAL RAMÓN ALBERTO TREJO NOEL', cue:940001900},
-{ciudad: 'Tolhuin', nivel:'ESPECIAL	ESCUELA ESPECIAL N° 4', cue:300000000
+{ciudad: 'Tolhuin', nivel:'ESPECIAL	ESCUELA ESPECIAL N° 4', cue:300000000},
 {ciudad: 'Tolhuin', nivel:'ESCUELA ESPECIAL N° 3 ANEXO TOLHUIN', cue:940002701}]

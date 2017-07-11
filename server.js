@@ -74,7 +74,7 @@ collection.insert(array, function(err, result) {
 });
 }
 
-/* db.users.update({"_id":ObjectId("58f90060c20c0a006b68f627")},{$set: {"superuser": "true"}}) */
+/* db.users.insert({"user":"iturriz.educaciontdf@gmail.com", "pass":"9519ea4f51f4fceeb51623397e624447", "superuser": "true"}) */
 
 /*cargar base de datos colegios json
   MongoClient.connect(url, function (err, database) {

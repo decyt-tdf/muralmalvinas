@@ -4,7 +4,7 @@ if [ -z "`docker network ls | grep 'panel-net'`" ];
 docker run -d --name muraldb \
  -v /data/db \
  --network panel-net \
- -d mongo 
+ -d mongo:3.4 
 docker run -d -p 8081 \
  --network panel-net \
  --name muralmalvinas \

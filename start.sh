@@ -14,3 +14,4 @@ docker run -d -p 8081 \
  -e "HTTPS_METHOD=nohttps" \
  -e "VIRTUAL_PORT=8081" \
  -d decyt/muralmalvinas
+docker network connect bridge muralmalvinas

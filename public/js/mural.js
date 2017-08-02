@@ -1,4 +1,32 @@
 var randoms = [];
+var mural ='<b>Mural Digital “Malvinas, identidad y pertenencia”</b><br> '
+mural += 'Mural de construcción colectiva.<br><br>'
+mural +='El Mural Digital es una propuesta que consistente en la producción '
+mural +='plástica _mural, pintura, collage_ destinado a estudiantes de nivel '
+mural +='inicial y del primer ciclo de la escuela primaria. Las temáticas para '
+mural +='construir el mural se referirán a las Islas Malvinas como parte integral '
+mural +='de la Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur, '
+mural +='desde su historia, su geografía y sus recursos naturales. '
+mural +='A través de la construcción colectiva del Mural “Malvinas, identidad y '
+mural +='pertenencia”'
+
+mural +=', como manifestación cultural, esperamos contribuir a la '
+mural +='Causa Malvinas, en tanto es de importancia en la construcción de la '
+mural +='identidad nacional como símbolo de la fraternidad sudamericana y de la '
+mural +='memoria, la soberanía y la democracia. '
+mural +='Las actividades se centran en la creación de un mural por grupo (grado '
+mural +='o sala). El mismo puede ser desarrollado sobre una de las paredes – '
+mural +='internas o externas de la institución- o pueden estar realizadas sobre '
+mural +='otro tipo de soportes, para luego ser expuesto y compartido con la '
+mural +='comunidad educativa. Cada uno de los murales elaborados formará '
+mural +='parte del Mural, para lo cual el proyecto será luego, presentado en '
+mural +='formato digital.'
+
+
+//document.getElementById("ventana").getElementsByClassName("close")[0].style.visibility = "visible";
+document.getElementById("ventana").getElementsByClassName("screen")[0].style.visibility = "visible";
+document.getElementById("ventana").getElementsByClassName("screen")[0].innerHTML ='<div id="mural">'+ mural+'<div><br><div style="text-align:center"><input class="btn" onclick="usuario()" value="Ingresar" type="submit"></div>'
+
 
 function galeria(img,numero) {
     for (i = 0; i < img.length; i++) { 
@@ -30,11 +58,22 @@ function search(a, obj) {
   xhttp.send();
 
 //------------------------------------------
-document.getElementById("ventana").getElementsByClassName("close")[0].onclick = function () {
+function cerrar_ventana() {
     document.getElementById("ventana").style.visibility = "hidden";
+    document.getElementById("ventana").getElementsByClassName("screen")[0].innerHTML = '';
     document.getElementById("ventana").getElementsByClassName("close")[0].style.visibility = "hidden";
-          document.getElementById("ventana").getElementsByClassName("datos")[0].style.visibility = "hidden";
+    document.getElementById("ventana").getElementsByClassName("datos")[0].style.visibility = "hidden";
+}
+
+document.getElementById("ventana").getElementsByClassName("close")[0].onclick = function () {
+        cerrar_ventana()
     }
+
+
+document.getElementById("ventana").getElementsByClassName("btn")[0].onclick = function () {
+        cerrar_ventana()
+    }
+
 
 function showImage(img,name,course) {
 

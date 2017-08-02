@@ -13,8 +13,14 @@
 <div class="addimg">HABILITAR</div>
 <div class="delimg">ELIMINAR</div>
 </div>
+<div class="panel">Volver al Panel</div>
 <script src="./js/token.js"></script>
 <script src="./js/fotos.js"></script>
 <script src="./js/md5.min.js"></script>
+<script> 
+document.getElementsByClassName("panel")[0].onclick = function () {
+        window.location = "/panel"
+    }
+</script>
 </body>
 </html>

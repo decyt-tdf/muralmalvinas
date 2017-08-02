@@ -7,6 +7,31 @@ body {
 	background-size: 100%;
 	padding:0
 }
+.panel {
+    bottom: 0;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 13px;
+    background: #2d4748;
+    color: white;
+    position: absolute;
+}
+
+
+#mural {
+    text-align: left;
+    color: #efefef;
+    font-size: 20px;
+    background-color: #35575f;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.btn {
+    font-size: 21px;
+    padding: 10px;
+    text-align: center;
+}
 
 #usuarios a {
     color: white;

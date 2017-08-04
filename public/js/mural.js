@@ -25,7 +25,7 @@ mural +='formato digital.'
 
 //document.getElementById("ventana").getElementsByClassName("close")[0].style.visibility = "visible";
 document.getElementById("ventana").getElementsByClassName("screen")[0].style.visibility = "visible";
-document.getElementById("ventana").getElementsByClassName("screen")[0].innerHTML ='<div id="mural">'+ mural+'<div><br><div style="text-align:center"><input class="btn" onclick="usuario()" value="Ingresar" type="submit"></div>'
+document.getElementById("ventana").getElementsByClassName("screen")[0].innerHTML ='<div id="mural">'+ mural+'<div><br><div style="text-align:center"><input class="btn" onclick="usuario()" value="Ver mural" type="submit"></div>'
 
 
 function galeria(img,numero) {

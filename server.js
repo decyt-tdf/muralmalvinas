@@ -56,6 +56,7 @@ gm(urlgm+'/img/'+img)
 });
 }
 
+
 function update(collection,id) {
 collection.updateOne({'_id':ObjectId(id)}, {$set: {active :"true"}}, function(err, result) {
   console.log("update");
@@ -73,8 +74,6 @@ collection.insert(array, function(err, result) {
   console.log("insert");
 });
 }
-
-/* db.users.insert({"user":"iturriz.educaciontdf@gmail.com", "pass":"9519ea4f51f4fceeb51623397e624447", "superuser": "true"}) */
 
 /*cargar base de datos colegios json
   MongoClient.connect(url, function (err, database) {
@@ -312,10 +311,15 @@ form.on('end', function(fields, files) {
             console.error(err);
         } else {
        thumbnail(file)
-		   var collection = db.collection('photos');
-		   var array = [{img: file , user: username.toLowerCase(), name: nombre, course: curso,  active:'false'}]
-       console.log(array)
-		   insert(collection,array)       
+
+        var colegio = db.collection('users');
+
+        colegio.find({user:username}).toArray(function(err, result) {
+             var collection = db.collection('photos');
+             var array = [{img: file , user: username.toLowerCase(), name: nombre, course: curso, school: result[0].school,  active:'false'}]
+             console.log(array)
+             insert(collection,array) 
+        })      
         }
     });
     url = '/panel/proceso.html'

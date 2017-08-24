@@ -66,7 +66,7 @@ document.getElementById("ventana").getElementsByClassName("btn")[0].onclick = fu
     }
 
 
-function showImage(img,name,course) {
+function showImage(img,name,course,school) {
 
   var elem = document.createElement("img");
   elem.src = './img/'+img;
@@ -77,7 +77,7 @@ function showImage(img,name,course) {
       document.getElementById("ventana").getElementsByClassName("screen")[0].innerHTML = '';
       document.getElementById("ventana").getElementsByClassName("screen")[0].appendChild(elem);
       document.getElementById("ventana").getElementsByClassName("datos")[0].style.visibility = "visible";
-      document.getElementById("ventana").getElementsByClassName("datos")[0].innerHTML = '<b>Nombre:</b> '+name+'&nbsp&nbsp&nbsp&nbsp<b>Curso:</b> '+course;
+      document.getElementById("ventana").getElementsByClassName("datos")[0].innerHTML = '<b>Nombre:</b> '+name+'&nbsp&nbsp&nbsp&nbsp<b>Curso:</b> '+course+'&nbsp&nbsp&nbsp&nbsp<b>Colegio:</b> '+school;
     }
 }
 
@@ -90,10 +90,11 @@ function getRandomImage(imgAr,numero) {
             var img = imgAr[num].img;
             var name = imgAr[num].name;
             var course = imgAr[num].course;
+            var school = imgAr[num].school;
             var elem = document.createElement("img");
             elem.setAttribute("class","tumb");
             elem.setAttribute("src", path + img);
-            elem.setAttribute('onclick','javascript:showImage("'+img+'","'+name+'","'+course+'")')
+            elem.setAttribute('onclick','javascript:showImage("'+img+'","'+name+'","'+course+'","'+school+'")')
             document.getElementById("imagenes").appendChild(elem)
     } else {
         getRandomImage(imgAr,numero)

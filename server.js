@@ -19,7 +19,8 @@ var ObjectId = require('mongodb').ObjectID;
 var mongouser= process.env.USER
 var mongopass= process.env.PASS
 
-var url = 'mongodb://muraldb:27017/admin';
+//mongodb://muraldb:27017/admin
+var url = process.env.MONGODB
 var db;
 
 MongoClient.connect(url, function (err, database) {
